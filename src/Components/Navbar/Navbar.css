@@ -1,0 +1,16 @@
+.nav {
+    background-color: rgb(47, 47, 110);
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: rgb(47, 47, 110);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    color:rgb(235, 203, 27)
+}
