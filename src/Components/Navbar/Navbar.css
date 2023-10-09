@@ -1,6 +1,7 @@
 .nav {
     background-color: rgb(47, 47, 110);
     height: 40px;
+    border-bottom: white solid 1px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -12,5 +13,5 @@ button {
 }
 
 button:hover {
-    color:rgb(235, 203, 27)
+    color:rgb(214, 184, 15)
 }
