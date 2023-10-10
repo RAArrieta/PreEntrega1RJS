@@ -1,0 +1,50 @@
+.footer {
+    background: rgb(255,175,0);
+    background: -moz-linear-gradient(90deg, rgba(255,175,0,1) 1%, rgba(240,233,12,1) 78%);
+    background: -webkit-linear-gradient(90deg, rgba(255,175,0,1) 1%, rgba(240,233,12,1) 78%);
+    background: linear-gradient(90deg, rgba(255,175,0,1) 1%, rgba(240,233,12,1) 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaf00",endColorstr="#f0e90c",GradientType=1);
+    font-size: 15px;
+    .footerIzq {
+        .button {
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            color: black;
+        }
+        .button:hover {
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        grid-area: centro;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footerCentro {
+        grid-area: der;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .alineoFooterCenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .imgFooter {
+                height: 30px;
+                width: 30px;
+                padding-right: 15px;
+            }
+        }
+    }
+    .footerDer {
+        grid-area: izq;
+        padding-left: 100px;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "izq centro der";
+}
+
