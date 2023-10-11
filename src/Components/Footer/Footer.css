@@ -5,7 +5,8 @@
     background: linear-gradient(90deg, rgba(255,175,0,1) 1%, rgba(240,233,12,1) 78%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaf00",endColorstr="#f0e90c",GradientType=1);
     font-size: 15px;
-    .footerIzq {
+    height: 200px;
+    .footerCentro {
         .button {
             background-color: transparent;
             border: none;
@@ -21,30 +22,38 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .footerCentro {
+    .footerDer {
         grid-area: der;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        .alineoFooterCenter {
+        .alineoFooterDer {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             .imgFooter {
-                height: 30px;
-                width: 30px;
-                padding-right: 15px;
+                height: 50px;
+                width: 50px;               
+            }
+            .alinearFooter {
+                padding-left: 15px;
+                width: 120px;
             }
         }
     }
-    .footerDer {
+    .footerIzq {
         grid-area: izq;
-        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding-left: 50px;
     }
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 25% 25%;
     grid-template-rows: 100%;
     grid-template-areas: 
     "izq centro der";
+    justify-content: center;
 }
 

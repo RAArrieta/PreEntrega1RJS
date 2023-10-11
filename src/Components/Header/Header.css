@@ -12,14 +12,14 @@
 }
 
 .buscador {
-    height: 25px;
+    height: 35px;
     width: 450px;
     border-radius: 5px;
     /* padding-left: 1000px; */
 }
 
 .carrito {
-    height: 40 px;
-    width: 40px;
+    height: 80 px;
+    width: 80px;
     padding-left: 40px;
 }
